@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.S.D</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background:#202420;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+/* ---------------- 상단 ---------------- */
+
+.top-left{
+    position:absolute;
+    top:18px;
+    left:20px;
+}
+
+.title{
+    position:absolute;
+    top:0;
+    left:0;
+
+    font-family:'Black Han Sans',sans-serif;
+    font-size:54px;
+    color:#D2B48C;
+    letter-spacing:3px;
+}
+
+.logo{
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    top: -26px;
+    left: 155px;
+
+    object-fit:contain;
+}
+
+.top-right{
+    position:absolute;
+    top:18px;
+    right:20px;
+    text-align:right;
+    font-size:12px;
+}
+
+.status{
+    margin-top:4px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* ---------------- 메인 ---------------- */
+
+.content{
+
+    position:absolute;
+
+    top:78px;
+    left:18px;
+    right:18px;
+    bottom:28px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.viewer{
+
+    flex:4.6;
+
+    background:#fff;
+
+    border:2px solid #C9AA70;
+
+}
+
+/* ---------------- 오른쪽 ---------------- */
+
+.side{
+
+    flex:1.25;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-width:360px;
+
+}
+
+.chat{
+
+    flex:1;
+
+    background:#404040;
+
+    border:2px solid #C9AA70;
+
+}
+
+.chat-title{
+
+    height:44px;
+
+    line-height:44px;
+
+    padding-left:12px;
+
+    font-size:18px;
+
+    color:#D2B48C;
+
+    font-weight:bold;
+
+    border-bottom:2px solid #C9AA70;
+
+}
+
+.buttons{
+
+    margin-top:12px;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+button{
+
+    flex:1;
+
+    height:58px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    filter:brightness(110%);
+
+}
+
+.chase{
+
+    background:#B71C1C;
+
+    color:white;
+
+}
+
+.return{
+
+    background:#D2B48C;
+
+    color:#222;
+
+}
+
+/* ---------------- 하단 ---------------- */
+
+.warning{
+
+    position:absolute;
+
+    bottom:8px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#C0392B;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-left">
+
+        <div class="title">
+            M.S.D
+        </div>
+
+        <img src="MDS_log.png" class="logo">
+
+    </div>
+
+    <div class="top-right">
+
+        <div>
+            LAT: 37.7381° N / LON: 127.0337° E
+        </div>
+
+        <div class="status">
+            [ SYSTEM STATUS : SECURE ]
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="viewer">
+
+        </div>
+
+        <div class="side">
+
+            <div class="chat">
+
+                <div class="chat-title">
+                    Chat v1.0.1
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <button class="chase">
+                    추적
+                </button>
+
+                <button class="return">
+                    복귀
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="warning">
+        WARNING: AUTHORIZED PERSONNEL ONLY. ALL ACTIVITIES ARE MONITORED.
+    </div>
+
+</div>
+
+</body>
+</html>

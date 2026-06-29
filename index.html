@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>M.S.D</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    width:100vw;
+    height:100vh;
+
+    background:#1E221F;
+
+    overflow:hidden;
+
+    font-family:sans-serif;
+}
+
+.container{
+
+    position:relative;
+
+    width:100%;
+    height:100%;
+}
+
+/* ========================= */
+/* SYSTEM STATUS */
+/* ========================= */
+
+.status{
+    position:absolute;
+    top:25px;
+    left:35px;
+    font-size:18px;
+    letter-spacing:1px;
+    color:white;
+}
+
+/* ========================= */
+/* GPS */
+/* ========================= */
+
+.gps{
+    position:absolute;
+    top:25px;
+    right:35px;
+    font-size:14px;
+    color:white;
+}
+
+
+/* ========================= */
+/* M.S.D */
+/* ========================= */
+
+.title{
+    position:absolute;
+
+    top:50px;              /* 위아래 이동 */
+    left:50%;              /* 좌우 이동 */
+
+    transform:translateX(-50%);
+
+    color:#D2B48C;
+
+    font-size:70px;
+    font-family:'Black Han Sans', sans-serif;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo{
+
+    position:absolute;
+
+    width:750px;           /* ★ 이미지 크기 (430 → 650으로 증가) */
+
+    top:120px;             /* 위아래 이동 */
+    left:50%;              /* 좌우 이동 */
+
+    transform:translateX(-50%);
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.start{
+
+    position:absolute;
+
+    top:560px;             /* 버튼 위치 */
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:18px 60px;
+
+    font-size:30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#D2B48C;
+
+    color:#222;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.start:hover{
+
+    background:#bfa178;
+    transform:translateX(-50%) scale(1.05);
+}
+
+/* ========================= */
+/* WARNING */
+/* ========================= */
+
+.warning{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#ff6464;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="status">
+[ SYSTEM STATUS : SECURE ]
+</div>
+
+<div class="gps">
+LAT : 37.7381° N / LON : 127.0337° E
+</div>
+
+<h1 class="title">
+M.S.D
+</h1>
+
+<img src="MDS_log.png" class="logo">
+
+<button class="start" id="startBtn">
+시작하기
+</button>
+
+<div class="warning">
+WARNING : AUTHORIZED PERSONNEL ONLY. ALL ACTIVITIES ARE MONITORED.
+</div>w
+
+</div>
+
+<script>
+    document.getElementById("startBtn").addEventListener("click",function() {
+        window.location.href = "index2.html";
+});
+</script>
+
+</body>
+</html>
